@@ -1,0 +1,378 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body { width: 1440px; }
+
+/* header */
+
+header {
+    position: relative;
+    width: 1440px;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+.head-rectangle-right {
+    position: absolute;
+    width: 870px;
+    height: 99px;
+    left: 570px;
+    top: 1px;
+   
+}
+
+.head-rectangle-left {
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 217px;
+    height: 62px;
+    left: 117px;
+    top: 19px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+}
+
+.navigation {
+    width: 306px;
+    height: 26px;
+    left: 806px;
+    top: 37px;
+}
+
+.navigation p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;  
+
+    color: #FFFFFF;
+}
+
+.navigation p:first-child {
+    position: absolute;
+    width: 43px;
+    height: 16px;
+    left: 806px;
+    top: 42px;
+}
+
+.navigation p:nth-child(2) {
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    left: 884px;
+    top: 42px;
+}
+
+.navigation p:nth-child(3) {
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    left: 959px;
+    top: 42px;
+}
+
+.navigation p:last-child {
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 1071px;
+    top: 42px;
+}
+
+.gold-circle {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 1062px;
+    top: 37px;
+    border-radius: 50%;
+    background-color: #CAA069;;
+}
+
+.header-icons {
+    position: absolute;
+    left: 1210px;
+    top: 38px;
+}
+
+.header-icons img {
+    margin-right: 28px;
+}
+
+
+/* main */
+
+main > div {
+    text-align: center;
+}
+h1 {
+    margin-top: 223px;
+    margin-bottom: 9px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 52px
+}
+
+.hashtag {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+}
+
+.hashtag > a {
+    color: black;
+    text-decoration: none;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 35px;
+    margin-left: 27px;
+    width: 1387px;
+    height: 656px;
+    overflow: hidden;
+}
+
+.circle-date {
+    position: absolute;
+    width: 196.37px;
+    height: 196.37px;
+    left: 1233px;
+    top: 533px;
+    background-color: #F7A708;
+    border-radius: 50%;
+}
+
+.break-line-date {
+    width: 99px;
+    border-top: 1px solid #FFFFFF;
+    margin: 5px 0px 5px 39px;
+}
+
+.circle-date p {
+    width: 38px;
+    height: 39px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.circle-date p:first-child {
+    margin-top: 21px;
+    margin-left: 70px;
+}
+
+.circle-date p:last-child {
+    margin-left: 58px;
+}
+
+article div {
+    margin-left: 202px;
+    width: 1036px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #534F4F;
+}
+.article-first-div {
+    margin-top: 57px;
+}
+
+.article-second-div {
+    margin-top: 38px;
+}
+
+article p {
+    margin-bottom: 20px;
+}
+
+
+/* comments section */
+
+.comment-section {
+    margin-top: 142px;
+}
+.top-comments-section {
+    width: 323px;
+    height: 24px;
+}
+.top-comments-section p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    position: absolute;
+    width: 117px;
+    height: 22px;
+}
+
+.comments p{
+    left: 83px;
+    top: -2px;
+}
+
+.comments img {
+    position: absolute;
+    width: 20px;
+    left: 49px;
+    top: 0;
+}
+
+.bookmark p {
+    left: 264px;
+    top: -2px;
+}
+
+.bookmark img {
+    position: absolute;
+    width: 15px;
+    left: 230px;
+    top: 0;
+}
+
+.top-comments-section div {
+    position: relative;
+}
+
+.break-line {
+    border-top: 1px solid #C4C4C4;
+    width: 1343px;
+    margin: 32px 0 37px 38px;
+}
+
+.change-article img {
+    width: 100px;
+}
+
+.change-article {
+    width: 384px;
+    margin-left: 38px;
+}
+
+.left-article {
+    float: right;
+    position: relative;
+    left: -8px
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.date-other-article {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #534F4F;
+    margin-bottom: 15px;
+}
+
+.title-other-article {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+
+.next-article {
+    float: right;
+    position: relative;
+    top: -104px;
+    right: 37px;
+}
+
+.right-article {
+    float: left;
+    position: relative;
+    left: -20px;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-left: 38px;
+    margin-top: 79px;
+    margin-bottom: 40px;
+}
+
+.comment {
+    position: relative;
+    margin-left: 38px;
+}
+
+.comment-container {
+    position: absolute;
+    left: 112px;
+    bottom: 8px;
+}
+
+.user-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    display: inline;
+}
+
+.date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #C4C4C4;
+}
+
+.comment-text {
+    width: 707px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #534F4F;
+    margin-top: 14px;
+}
+
+.reply {
+    position: absolute;
+    top: 84px;
+    left: 1287px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
