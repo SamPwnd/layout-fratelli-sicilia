@@ -412,6 +412,11 @@ h2 {
 input::placeholder {
     color: #C4C4C4;
     padding-left: 31px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .small-input[type=text] {
@@ -426,9 +431,16 @@ input::placeholder {
     box-sizing: border-box;
     border-radius: 5px;
     margin-left: 37px;
+    resize: none;
 }
 
 .large-input::placeholder {
     color: #C4C4C4;
     padding-left: 31px;
+    padding-top: 18px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
