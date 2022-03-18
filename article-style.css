@@ -1,31 +1,20 @@
 *{ margin: 0; padding: 0; }
 
-body { width: 1440px; }
+body { width: 100%; }
 
 /* header */
 
 header {
     position: relative;
-    width: 1440px;
     height: 100px;
     left: 0;
     top: 0;
+    background-color: #261916;
 }
 
 .head-rectangle-right {
     position: absolute;
-    width: 870px;
-    height: 99px;
-    left: 570px;
-    top: 1px;
-   
-}
-
-.head-rectangle-left {
-    position: absolute;
-    width: 1440px;
-    height: 100px;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -39,10 +28,10 @@ header {
 }
 
 .navigation {
-    width: 306px;
-    height: 26px;
+    width: fit-content;
+    position: relative;
+    top: 42px;
     left: 806px;
-    top: 37px;
 }
 
 .navigation p {
@@ -51,50 +40,21 @@ header {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;  
-
     color: #FFFFFF;
-}
-
-.navigation p:first-child {
-    position: absolute;
-    width: 43px;
-    height: 16px;
-    left: 806px;
-    top: 42px;
-}
-
-.navigation p:nth-child(2) {
-    position: absolute;
-    width: 40px;
-    height: 16px;
-    left: 884px;
-    top: 42px;
-}
-
-.navigation p:nth-child(3) {
-    position: absolute;
-    width: 74px;
-    height: 16px;
-    left: 959px;
-    top: 42px;
-}
-
-.navigation p:last-child {
-    position: absolute;
-    width: 41px;
-    height: 16px;
-    left: 1071px;
-    top: 42px;
+    margin-right: 35px;
+    display: inline;
+    position: relative;
+    z-index: 1;
 }
 
 .gold-circle {
     position: absolute;
     width: 26px;
     height: 26px;
-    left: 1062px;
-    top: 37px;
+    left: 262px;
+    bottom: -4px;
     border-radius: 50%;
-    background-color: #CAA069;;
+    background-color: #CAA069;
 }
 
 .header-icons {
@@ -134,13 +94,13 @@ h1 {
 
 .hashtag > a {
     color: black;
-    text-decoration: none;
 }
 
 .image-container {
     position: relative;
     margin-top: 35px;
-    margin-left: 27px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1387px;
     height: 656px;
     overflow: hidden;
@@ -183,7 +143,8 @@ h1 {
 }
 
 article div {
-    margin-left: 202px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1036px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -211,8 +172,8 @@ article p {
     margin-top: 142px;
 }
 .top-comments-section {
-    width: 323px;
-    height: 24px;
+    margin-left: 49px;
+    position: relative;
 }
 .top-comments-section p {
     font-family: 'Montserrat';
@@ -227,37 +188,42 @@ article p {
 }
 
 .comments p{
-    left: 83px;
-    top: -2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+    display: inline;
+}
+
+.comments {
+    width: 15%;
 }
 
 .comments img {
+    margin-top: 2px;
+}
+
+.bookmark {
+    width: 15%;
     position: absolute;
-    width: 20px;
-    left: 49px;
+    left: 193px;
     top: 0;
 }
 
 .bookmark p {
-    left: 264px;
-    top: -2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+    display: inline;
 }
 
 .bookmark img {
-    position: absolute;
-    width: 15px;
-    left: 230px;
-    top: 0;
-}
-
-.top-comments-section div {
-    position: relative;
+    margin-top: 2px;
 }
 
 .break-line {
     border-top: 1px solid #C4C4C4;
-    width: 1343px;
-    margin: 32px 0 37px 38px;
+    
+    margin: 32px 60px 37px 38px;
 }
 
 .change-article img {
@@ -314,7 +280,7 @@ article p {
     text-align: right;
 }
 
-h2 {
+h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -328,6 +294,8 @@ h2 {
 .comment {
     position: relative;
     margin-left: 38px;
+    margin-bottom: 46px;
+
 }
 
 .comment-container {
@@ -353,6 +321,7 @@ h2 {
     font-size: 18px;
     line-height: 22px;
     color: #C4C4C4;
+    margin-left: 12px;
 }
 
 .comment-text {
@@ -394,12 +363,16 @@ h2 {
 }
 
 .form-title h2 {
-    margin-left: 0;
-    margin-bottom: 22px;
+    margin: 92px 0 22px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
 }
 
 .small-input {
-    width: 673px;
+    width: 46%;
     height: 52px;
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
@@ -424,7 +397,7 @@ input::placeholder {
     margin-right: 30px;
 }
 .large-input {
-    width: 1376px;
+    width: 90%;
     height: 200px;
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
@@ -445,9 +418,9 @@ input::placeholder {
     line-height: 21px;
 }
 
-button {
+button[type=submit] {
     background-color: #E60B7F;
-    width: 225px;
+    min-width: 225px;
     height: 52px;
     border-radius: 5px;
     border: 0px;
@@ -459,4 +432,132 @@ button {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    margin-top: 140px;
+    padding-top: 50px;
+}
+
+.logo-footer {
+    width: 173px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+.link-box {
+    width: 20%;
+    list-style: none;
+}
+
+.link-box li {
+    color: #C4C4C4;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.link-box li:first-child {
+    color: white;
+    margin-bottom: 20px;    
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.link-box li:last-child {
+    margin-bottom: 0;
+}
+
+.link-container {
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 45px;
+}
+
+.link-box:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 360px;
+}
+
+.link-box:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 660px;
+}
+
+.link-box:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 660px;
+}
+
+.link-box:last-child {
+    position: absolute;
+    top: 0;
+    left: 960px;
+}
+
+.button-footer {
+    background: #CAA069;
+    border-radius: 5px;
+    border: 0;
+    height: 44px;
+    min-width: 160px;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+.break-line-footer {
+    border-top: 1px solid #CAA069;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 10px;
+}
+
+.social-icons {
+    margin-top: 18px;
+    margin-left: 10px;
+    padding-bottom: 18px;
+}
+
+.icon-footer {
+    position: relative;
+}
+
+.payment-icons img {
+    width: 26px;
+}
+
+.payment-icons li {
+    display: inline;
+    margin: 10px;
+}
+
+.payment-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
