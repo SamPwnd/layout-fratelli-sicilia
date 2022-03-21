@@ -75,6 +75,7 @@ a {
     list-style: none;
     gap: 28px;
     align-items: center;
+    z-index: 1;
 }
 
 .main-img {
