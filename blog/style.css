@@ -124,8 +124,12 @@ h1 {
     margin-left: 24px;
 }
 
-.tag {
+.tag:first-child {
     background: #E60B7F;
+    color: white;
+}
+
+.tag {
     border: 1px solid #E60B7F;
     box-sizing: border-box;
     border-radius: 24px;
@@ -143,18 +147,47 @@ h1 {
     color: #261916;
 }
 
-.tag p:first-child {
+.tag:first-child p {
     color: white;
 }
 
 .card {
     width: 451px;
 }
+
 .card-img {
-    background: url('assets/mandorla.png');
     width: 100%;
-    height: 537px;
     position: relative;
+    z-index: 1;
+}
+
+.card-img:hover > * {
+    filter: blur(7px) brightness(70%);
+}
+
+.button-read {
+    background-color: #F7A708;
+    position: absolute;
+    top: 246px;
+    left: 150px;
+    border-radius: 5px;
+    padding: 12px 50px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.card-img:hover > .button-read {
+    opacity: 1;
+    filter: none;
+}
+
+.button-read p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
 }
 
 .card-date {
@@ -194,6 +227,12 @@ h1 {
     font-weight: 400;
     font-size: 35px;
     line-height: 40px;
+}
+
+.hashtag-line {
+    border-top: 2px solid #E60B7F;
+    width: 48px;
+    margin-bottom: 12px;
 }
 
 .card-group {
