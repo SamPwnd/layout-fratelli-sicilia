@@ -269,6 +269,7 @@ h2 {
 
 .img-quality {
     margin-right: 14px;
+    position: relative;
 }
 
 .third-section {
@@ -331,14 +332,38 @@ h4 {
     color: #FFFFFF;
 }
 
+.card-collection-container {
+    position: relative;
+    margin-bottom: 18px;
+}
+
 .card-collection-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    position: absolute;
+    top: 0;
+    left: 500px;
 }
 
 .card-collection-text .little-line-break {
     margin-top: 36px;
     border-top:  2px solid#E60B7F;
+    margin-left: 270px;
+}
+.card-collection-text .pink-button {
+    margin-top: 0;
+}
+.card-collection-text > p {
+    margin-left: 270px;
+    margin-right: 190px;
+}
+
+.card-collection-img {
+    position: relative;
+    width: max-content;
+}
+
+.collection-section > .card-collection-container:last-child .little-line-break {
+    border-top:  2px solid #B5CD1F;
 }
