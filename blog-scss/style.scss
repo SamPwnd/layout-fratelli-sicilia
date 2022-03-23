@@ -1,0 +1,360 @@
+* { margin: 0; padding: 0; }
+
+ul { list-style: none;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    background-color: #261916;
+}
+
+.header__background {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 118px;
+    margin-right: 120px;
+    
+    .logo {
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.9));
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        height: 100%;
+
+        .nav-container__nav {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+
+            .nav__item {
+                font-family: 'Helvetica';
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;  
+                color: #FFFFFF;
+                z-index: 1;
+            }
+
+            .nav__circle {
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                left: 253px;
+                bottom: 37px;
+                border-radius: 50%;
+                background-color: #CAA069;
+            }
+        }
+
+        .nav-container__icons {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            align-items: center;
+            z-index: 1;
+        }
+    }
+}
+
+.main__img-title {
+    position: relative;
+    background: url("assets/magazine-img.png");
+    height: 100%;
+    background-position: center bottom;
+
+    h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 110px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: -50px;
+    }
+
+    h2 {
+        font-family: 'Yellowtail';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 123px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+    div {
+        width: 100%;
+        height: 386px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.tag-group {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 24px;
+    overflow: scroll;
+
+    .tag-group__tag {
+        border: 1px solid #E60B7F;
+        box-sizing: border-box;
+        border-radius: 24px;
+        width: max-content;
+        padding: 7px 30px 7px 30px;
+        margin-right: 10px;
+
+        &--selected {
+            background: #E60B7F;
+            .selected-tag-text {
+                color: white;
+            }
+        }
+
+        .tag__text {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #261916;
+
+            &--selected {
+                color: white;
+            }
+        }
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+    justify-content: space-between;
+
+    .card {
+        width: 451px;
+
+        .card__img {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+
+            .card__read-btn  {
+                background-color: #F7A708;
+                position: absolute;
+                top: 246px;
+                left: 150px;
+                border-radius: 5px;
+                padding: 12px 50px;
+                opacity: 0;
+                z-index: 2;
+
+                p {
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: white;
+                }
+            }
+
+        }
+        .card__img:hover > * {
+            filter: blur(7px) brightness(70%);
+        }
+
+        .card__img:hover {
+            .card__read-btn {
+                opacity: 1;
+                filter: none;
+            }
+        }
+
+        .card__date {
+            transform: rotate(270deg);
+            background-color: white;
+            border-radius: 10px 0 0 0;
+            padding: 18px 26px;
+            width: fit-content;
+            position: absolute;
+            top: 52px;
+            right: -54px;
+
+            p {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .card__hashtag {
+            font-family: 'Helvetica';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.1em;
+            margin-top: 16px;
+            margin-bottom: 14px;
+        }
+
+        .card__title {
+            font-family: 'Yeseva One';
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        .card__hashtag-line {
+            border-top: 2px solid #E60B7F;
+            width: 48px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.break-line {
+    border: 1px solid #C4C4C4;
+    margin: 40px 50px 98px 50px;
+}
+
+.page-switcher {
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    gap: 44px;
+    justify-content: center;
+    margin-bottom: 122px;
+    position: relative;
+
+    &__page--selected {
+        position: relative;
+
+        .page__circle {
+            position: absolute;
+            background: #F7A708;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            z-index: -1;
+            left: -18px;
+            top: -10px;
+        }
+    }
+}
+
+footer {
+    background-color: black;
+
+    .footer__container {
+        padding: 52px 150px 0 150px;
+
+        .footer__logo {
+            margin-bottom: 50px;
+        }
+
+        .footer__links {
+            display: flex;
+            justify-content: space-between;
+
+            .links__box {
+                width: 20%;
+
+                .box__link {
+                    color: #C4C4C4;
+                    margin-bottom: 15px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    list-style: none;
+
+                    &--title {
+                        color: white;
+                        margin-bottom: 20px;    
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+
+                    .box__link__btn {
+                        background: #CAA069;
+                        border-radius: 5px;
+                        border: 0;
+                        height: 44px;
+                        min-width: 160px;
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__break-line {
+        border: 1px solid #CAA069;
+        margin: 45px 50px 8px 50px;
+    }
+
+    .footer__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 12px;
+        padding-left: 12px;
+
+        .icons__social {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .icons__payment {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .icons__payment__paypal {
+                width: 26px;
+            }
+        }
+    }
+}
+
+
+
